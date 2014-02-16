@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "rails-test" %></title>
-
+    <title><%= content_for?(:title) ? "Ruby on Rails Tutorial Sample App | " + yield(:title) : "Rails Test" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
