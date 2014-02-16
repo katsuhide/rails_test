@@ -1,7 +1,9 @@
 RailsTest::Application.routes.draw do
-  get "static_pages/home"
-  get "static_pages/help"
-  get "static_pages/about"
+  match '/home', to: 'static_pages#home', via: 'get'
+  match '/help', to: 'static_pages#help', via: 'get'
+  match '/about', to: 'static_pages#about', via: 'get'
+  match '/new', to: 'pages#new', via: 'get'
+
   resources :pages
 
   # The priority is based upon order of creation: first created -> highest priority.
