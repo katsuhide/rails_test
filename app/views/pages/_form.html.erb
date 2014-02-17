@@ -12,24 +12,34 @@
 <% end %>
 
 <div class="row">
-        <div class="small-2 large-2 columns">
+        <div class="small-2 large-2 columns" style="text-align:right">
                 <%= f.label :name  %><br>
         </div>
-        <div class="small-6 large-6 columns">
+        <div class="small-8 large-8 columns">
                 <%= f.text_field :name  , :placeholder => "name" %>
         </div>
+        <div class="small-2 large-2 columns"></div>
+</div>
+<div class="row">
+        <div class="small-2 large-2 columns" style="text-align:right">
+                <%= f.label :title %><br>
+        </div>
+        <div class="small-8 large-8 columns">
+                <%= f.text_area :title , :placeholder => "title" %>
+        </div>
+        <div class="small-2 large-2 columns"></div>
 </div>
 <div class="row">
         <div class="small-2 large-2 columns">
-                <%= f.label :title %><br>
+        </br>
         </div>
-        <div class="small-6 large-6 columns">
-                <%= f.text_area :title , :placeholder => "title" %>
+        <div class="small-8 large-8 columns">
+                <div class="actions">
+                        <%= f.submit :class => "button" %>
+                </div>
         </div>
-</div>
-<div class="row">
-        <div class="actions">
-                <%= f.submit :class => "button" %>
+        <div class="small-2 large-2 columns">
+        </br>
         </div>
 </div>
 <% end %>
